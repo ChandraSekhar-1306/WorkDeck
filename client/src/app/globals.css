@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+
+/* @layer base {
+  :root {
+    --bg-dark: #101214;
+    --dark-secondary: #1d1f21;
+    --dark-tertiary: #3b3d40;
+    --blue-primary: #0275ff;
+    --stroke-dark: #2d3135;
+  }
+} */
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  @apply text-sm;
+  @apply bg-[#18191b];
+  @apply text-gray-900;
+}
+
+.timeline ._3_ygE {
+  @apply rounded-tl-md border border-r-0 border-[#2d3135];
+}
+.timeline ._2eZzQ {
+  @apply border-[#2d3135];
+}
+.timeline ._2dZTy {
+  @apply fill-[#1d1f21];
+}
+.timeline ._2dZTy:nth-child(even) {
+  @apply dark:fill-[#3b3d40];
+}
+.timeline ._35nLX {
+  @apply dark:fill-[#1d1f21] dark:stroke-[#2d3135];
+}
+.timeline ._9w8d5 {
+  @apply dark:fill-white;
+}
+.timeline ._34SS0 {
+  @apply dark:bg-[#1d1f21];
+}
+.timeline ._34SS0:nth-of-type(even) {
+  @apply bg-[#3b3d40];
+}
+.timeline ._RuwuK,
+.timeline ._3rUKi,
+.timeline ._1rLuZ {
+  @apply dark:stroke-[#2d3135];
+}
+.timeline ._3ZbQT {
+  @apply border-l-0  dark:border-[#2d3135];
+}
+.timeline ._3T42e {
+  @apply dark:bg-[#101214];
+}
+.timeline ._29NTg {
+  @apply text-neutral-500;
+}
+
+
+.fixed-dark-cell {
+    background-color: #1d1f21 !important;
+    color: #d1d5db !important;
+    border-color: #666b6f !important;
+}
+
+
+
+
+
+
+
