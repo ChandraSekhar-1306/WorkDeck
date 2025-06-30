@@ -16,6 +16,26 @@ export const getUsers = async(
     }
 }
 
+export const getUser = async(
+    req: Request,
+    res: Response
+): Promise<void> =>{
+
+    const {cognitoId} = req.params;
+   
+    try{
+        const user = await prisma.user.findUnique({
+            where:{
+                cognitoId: cognitoId
+            }
+        });
+        res.json(user)
+       
+    } catch(error){
+        res.status(500).json({message: "Error retrieving user", error});
+    }
+}
+
 export const postUser = async(req:Request , res:Response)=>{
 
 
